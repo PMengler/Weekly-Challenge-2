@@ -1,0 +1,150 @@
+/* Color Scheme generated from Coolors.co/palletes/trending */
+:root {
+  --back: #f7f7f7;
+  --header: #aaae7f;
+  --conback: #d0d6b3;
+  --border: #143109;
+  --shadow: #efefef;
+  --text: black;
+}
+
+* {
+    box-sizing: border-box;
+    /* background-color: beige; */
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--back);
+  }
+  
+  header {
+    margin: 0 auto;
+    padding: 40px;
+    color: var(--text);
+    background-color: var(--header);
+    border: 2px var(--border) solid;
+    border-radius: 100px;
+    text-align: center;
+  }
+
+  /* controls the entire nav bar box */
+  nav {
+    display: flex;
+    /* background-color: var(--back); */
+    justify-content: right;
+    margin-right: 10px;
+  }
+  
+  /* controls the style of the text boxes in the nav bar */
+  nav a {
+    color: var(--text);
+    background-color: var(--conback);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    border: 1px var(--border) solid;
+    border-radius: 25px;
+  }
+  
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+  }
+  
+  h2 {
+    position: relative;
+    bottom: 20px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  section {
+    color: var(--text);
+    display: flex;
+    flex-direction: space-evenly;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  img {
+    border: 1px var(--border) solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+  }
+
+  /* aside {
+    display: block;
+    margin: auto 0;
+    position: fixed;
+    justify-content: right;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border);
+    box-shadow: 5px var(--shadow);
+    border-radius: 10px;
+  } */
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--header);
+    color: var(--text);
+    margin-top: auto;
+  }
+
+  .container {
+    flex-shrink: 1;
+    flex-flow: row wrap;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    margin: 20px;
+    /* flex: 0 0 300px; */
+    box-shadow: var(--shadow); 
+    min-width: 500px; 
+    background-color: var(--conback);
+    border-radius: 10px;
+  }
+
+  .project {
+    flex-flow: row wrap;
+    padding: 20px;
+    background-color: var(--conback);
+  }
+
+  .contact {
+    bottom: 200px;
+    right: 20px;
+    width: 25%;
+  }
+
+  .resume {
+    bottom: 50px;
+    right: 20px;
+    width: 25%;
+  }
+
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
