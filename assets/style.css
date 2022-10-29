@@ -28,7 +28,7 @@
     padding: 40px;
     color: var(--text);
     background-color: var(--header);
-    border: 2px var(--border) solid;
+    border: 5px var(--border) solid;
     border-radius: 100px;
     text-align: center;
   }
@@ -50,7 +50,7 @@
     text-align: center;
     margin: 10px;
     padding: 15px;
-    border: 1px var(--border) solid;
+    border: 4px var(--border) solid;
     border-radius: 25px;
   }
   
@@ -62,8 +62,8 @@
   }
   
   h2 {
-    position: relative;
-    bottom: 20px;
+    /* position: relative;
+    bottom: 20px; */
   }
 
   h3 {
@@ -73,7 +73,7 @@
   section {
     color: var(--text);
     display: flex;
-    flex-direction: space-evenly;
+    flex: 1;
   }
 
   p {
@@ -81,10 +81,17 @@
   }
 
   img {
-    border: 1px var(--border) solid;
+    border: 2px var(--border) solid;
     border-radius: 10px;
     padding: 10px;
     width: 250px;
+  }
+
+  .project-1 img {
+    border: 2px var(--border) solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
   }
 
   /* aside {
@@ -111,10 +118,9 @@
   }
 
   .container {
-    flex-shrink: 1;
     flex-flow: row wrap;
-    border-style: solid;
-    border-width: 1px;
+    flex: 1;
+    border: 3px var(--border) solid;
     padding: 20px;
     margin: 20px;
     /* flex: 0 0 300px; */
@@ -122,24 +128,26 @@
     min-width: 500px; 
     background-color: var(--conback);
     border-radius: 10px;
+    align-content: center;
+  }
+
+  .project-1 {
+    display: flex;
+    flex-grow: 4;
+    padding: 20px;
+    background-color: var(--conback);
+    text-justify: center;
   }
 
   .project {
-    flex-flow: row wrap;
+    display: inline-block;
     padding: 20px;
     background-color: var(--conback);
   }
 
-  .contact {
-    bottom: 200px;
-    right: 20px;
-    width: 25%;
-  }
-
-  .resume {
-    bottom: 50px;
-    right: 20px;
-    width: 25%;
+  .download {
+    text-justify: left;
+    margin: 20px;
   }
 
   @media screen and (max-width: 768px) {
